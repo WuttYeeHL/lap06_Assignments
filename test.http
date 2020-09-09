@@ -1,0 +1,38 @@
+
+################################################
+### List Items
+
+### Get a list of shows
+GET http://localhost:3000/api/tvshows
+
+### Demostrate Query String
+GET http://localhost:3000/api/tvshows?key1=value1&key2=value2
+
+### Filter shows whose title contains "things"
+GET http://localhost:3000/api/tvshows?contains=things
+
+### Filter shows whose title contains "The"
+GET http://localhost:3000/api/tvshows?contains=The
+
+### Filter the shows and sort them by title in asc/desc
+GET http://localhost:3000/api/tvshows?contains=The&sorted=asc
+
+
+################################################
+### Get an Item
+
+### Demonstrate Parameters
+GET http://localhost:3000/api/demo/1/2/3
+
+###
+GET http://localhost:3000/api/demo/1/2
+
+
+### Get an Item by ID
+GET http://localhost:3000/api/tvshow/3
+
+### Get an Item whose ID = 3 and returns it in upper case
+GET http://localhost:3000/api/tvshow/3/upper
+
+
+
